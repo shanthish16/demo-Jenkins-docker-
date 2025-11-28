@@ -27,7 +27,10 @@ pipeline {
 
         stage('Build with Maven') {
             steps {
-                sh 'mvn clean package'
+                // Change directory to where pom.xml exists
+                dir('sample-app') {
+                    sh 'mvn clean package'
+                }
             }
         }
 
