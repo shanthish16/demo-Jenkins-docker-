@@ -21,7 +21,7 @@ pipeline {
                 echo "Selected Branch: ${params.BRANCH_NAME}"
 
                 git branch: "${params.BRANCH_NAME}",
-                    url: 'https://github.com/Suprith25/Java-mini-project.git'
+                    url: 'https://github.com/shanthish16/Java-project.git'
             }
         }
 
